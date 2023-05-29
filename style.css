@@ -7,6 +7,7 @@
 
 .dashboard-container {
   display: flex;
+  height: 100vh;
 }
 
 .nav-container {
@@ -14,12 +15,56 @@
 }
 
 .top-nav-container {
+  padding: 1rem 1.25rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.top-left-nav-container {
+  display: flex;
+  /* width: 100%; */
+}
+
+.top-right-nav-container {
+  margin-right: 4rem;
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+input {
+  /* width: 80%; */
+  /* flex: 1; */
+  width: 100%;
+  border-radius: 2rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
 }
 
 .bottom-nav-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
+
+.bottom-nav-container .profile .profile-pic {
+  width: 4rem;
+  height: 4rem;
+}
+
+.intro-text {
+  font-size: 1rem;
+}
+
+.profile-name-with-handle {
+  font-size: 1.5rem;
 }
 
 .profile {
@@ -33,7 +78,20 @@
 
 .btn-container {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+  width: 28rem;
+}
+
+.btn-container button {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  width: 8rem;
+  background-color: #0ea5e9;
+  color: #f0f9ff;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .sidebar {
@@ -100,18 +158,30 @@
 }
 
 .project-grid-container {
+  border: 1px solid brown;
+  height: auto;
+  width: auto;
   margin-left: 1rem;
-  flex: 1;
+  /* flex: 1; */
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* align-content: stretch; */
+  /* place-content: stretch; */
   /* grid-template-rows: 1fr 1fr 1fr; */
   gap: 1rem;
+  height: 85%;
 }
 
 .card {
+  padding: 2rem 1rem;
   border-radius: 1rem;
   background-color: #f0f9ff;
-  width: 18.75rem;
+  /* width: 28rem; */
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .project-icons {
@@ -121,6 +191,8 @@
 
 .announcement-trending-container {
   margin: 0 1rem;
+  width: 50%;
+  height: 100%;
 }
 
 .announcement-flex-container {
@@ -130,7 +202,9 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 18.75rem;
+  /* width: 18.75rem; */
+  width: 75%;
+  height: 100%;
 }
 
 .nav-svg {
@@ -162,6 +236,7 @@
 
 .project-svg {
   width: 1.5625rem;
+  margin-left: 1rem;
 }
 
 .main-section-header {
@@ -187,13 +262,29 @@
 
 .card-text {
   font-size: 1rem;
-  /* margin-left: 1rem; */
+  padding-right: 1rem;
+  margin-right: 3rem;
 }
 
 .announcement-text {
   font-size: 0.85rem;
 }
 
+.announcement-card {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid gray;
+}
+
+.announcement-card:last-child {
+  font-size: 0.85rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 .announcement-header {
   font-size: 1.25rem;
+}
+
+.trending-container {
+  margin-bottom: 2rem;
 }
